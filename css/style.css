@@ -183,6 +183,11 @@ section#our-products p {
 section#our-products .child {
   height: 350px;
   margin-bottom: 3rem;
+  border-radius: 10px;
   overflow: hidden;
+}
+
+section#our-products .child img {
+  width: 100%;
 }
 /* end  our-products */
