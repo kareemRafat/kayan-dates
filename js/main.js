@@ -19,3 +19,18 @@ $(window).scroll(function(){
   }
 
 })
+
+// end nav
+
+// start about company section
+
+$('section#our-products .first-row img').click(function(){
+  var imgSrc = $(this).attr('src');
+  $('.big-picture').fadeIn(1000).attr('src' , imgSrc);
+})
+
+$(document).click(function(e){
+  if(!$(e.target).is('img')){
+    $('.big-picture').fadeOut(1000);
+  }
+})
