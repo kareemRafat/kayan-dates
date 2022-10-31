@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 2000px;
+}
+/* navbar */
+nav {
+  background-color: rgba(0,0, 0, 0.1);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.nav-item {
+  margin-left: 50px;
+}
+
+/* end navbar */
+
+/* space */
+hr.space {
+  border: none !important;
+  clear: both;
+  height: 150px;
+  margin: 0;
+}
+
+/* start header  */
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/header3.jpg);
+  background-size: cover;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+}
+
+header .title {
+  color: white;
+  text-align: right;
+  font-size: 18px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.22);
+  padding: 40px;
+  border-radius: 15px;
+  direction: rtl;
+  overflow-wrap: break-word;  
+}
+
+header .main {
+  width: 60%;
+  height: 150px;
+  background-color: rgba(0,0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -34%);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: right;
+  border-radius: 10px;
+}
+
+header .main .text h5 {
+  display: inline;
+  padding-top: 10px;
+  border-top: 3px solid #e25111;
+}
+
+header .main .text p {
+  margin-top: 10px;
+  margin-bottom: -21px;
+}
+/* end header  */
