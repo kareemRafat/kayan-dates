@@ -24,7 +24,7 @@ $(window).scroll(function(){
 
 // start about company section
 
-$('section#our-products .first-row img').click(function(){
+$('section#about-company .first-row img').click(function(){
   var imgSrc = $(this).attr('src');
   $('.big-picture').fadeIn(1000).attr('src' , imgSrc);
 })
@@ -34,3 +34,5 @@ $(document).click(function(e){
     $('.big-picture').fadeOut(1000);
   }
 })
+
+// end about company section
