@@ -155,7 +155,6 @@ section#about-company .first-row img:nth-child(2) {
 /* start our-products */
 section#our-products {
   color: white;
-  height: 85vh;
   background-image: url(../images/new-section.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -182,8 +181,8 @@ section#our-products p {
 }
 
 section#our-products .child {
-  width: 300px;
   height: 350px;
+  margin-bottom: 3rem;
   overflow: hidden;
 }
 /* end  our-products */
