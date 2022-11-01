@@ -180,6 +180,44 @@ section#our-products p {
   margin-bottom: 40px;
 }
 
+section#our-products .slider-container {
+  position: relative;
+}
+
+section#our-products .slider-container .tns-controls button:first-child {
+  position: absolute;
+  top: 45%;
+  left: -5%;
+}
+
+section#our-products .slider-container .tns-nav button{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 5px;
+}
+
+section#our-products .slider-container button[data-action="stop"],
+section#our-products .slider-container button[data-action="start"] {
+  display: none;
+}
+section#our-products .slider-container .tns-controls button:last-child {
+  position: absolute;
+  top: 45%;
+  right: -5%;
+}
+
+section#our-products .slider-container .tns-controls button[data-controls="prev"] ,
+section#our-products .slider-container .tns-controls button[data-controls="next"] {
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: white;
+  
+}
+
+
 section#our-products .child {
   height: 350px;
   margin-bottom: 3rem;

@@ -36,3 +36,28 @@ $(document).click(function(e){
 })
 
 // end about company section
+
+// carousel
+var slider = tns({
+  container: '.my-slider',
+  slideBy: 2,
+  mouseDrag: true,
+  controlsText : ['<i class="fa-sharp fa-solid fa-arrow-left"></i>' , '<i class="fa-sharp fa-solid fa-arrow-right"></i>'],
+  navPosition : 'bottom',
+  nav : true ,
+  autoplay: true ,
+  responsive: {
+    640: {
+      gutter: 20,
+      items: 1
+    },
+    700: {
+      gutter: 30,
+      items: 2
+    },
+    900: {
+      items: 3,
+    }
+  },
+});
+// end carousel
