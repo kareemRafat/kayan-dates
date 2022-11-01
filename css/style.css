@@ -251,7 +251,8 @@ section#our-products .child span {
   right: 10px;
   top: 52%;
   z-index: 5;
-  background: linear-gradient(304deg, rgba(171,62,66,1) 0%, rgba(128,40,43,1) 67%, rgba(73,18,19,1) 100%);
+  /* background: linear-gradient(304deg, rgba(171,62,66,1) 0%, rgba(128,40,43,1) 67%, rgba(73,18,19,1) 100%); */
+  background-color: #e25111;
   width: 127px;
   height: 68px;
   border-radius: 30px 10px;
