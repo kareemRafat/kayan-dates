@@ -180,6 +180,7 @@ section#our-products p {
   margin-bottom: 40px;
 }
 
+/*  carousel */
 section#our-products .slider-container {
   position: relative;
 }
@@ -214,18 +215,75 @@ section#our-products .slider-container .tns-controls button[data-controls="next"
   border: none;
   font-size: 40px;
   color: white;
+}
+/*  end carousel */
+
+section#our-products .child {
+  width: calc(100% / 1);
+  height: 450px;
+  background-color: white;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
   
 }
 
-
-section#our-products .child {
-  height: 350px;
-  margin-bottom: 3rem;
-  border-radius: 10px;
+section#our-products .child .child-img {
+  height: 60%;
+  width: 100%;
   overflow: hidden;
 }
 
 section#our-products .child img {
   width: 100%;
 }
+
+section#our-products .child p {
+  color: black;
+  margin-inline: 20px;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+section#our-products .child span {
+  position: absolute;
+  right: 10px;
+  top: 52%;
+  background: #bf352b;
+  display: block;
+  width: 127px;
+  height: 68px;
+  border-radius: 10px;
+  line-height: 68px;
+  text-align: center;
+  border: 3px solid white;
+  box-sizing: content-box;
+  transition: 0.5s linear;
+  overflow: hidden;
+}
+
+section#our-products .child span::after {
+  content: 'اسم الصنف';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: scaleX(0);
+  /* transform-origin: 100% 50%; */
+  background: #362725;
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+
+}
+
+section#our-products .child span:hover:after {
+  border-radius: 10px;
+  transform: scaleX(1);
+}
+
 /* end  our-products */

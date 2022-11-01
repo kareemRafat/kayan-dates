@@ -52,7 +52,7 @@ var slider = tns({
       items: 1
     },
     700: {
-      gutter: 30,
+      gutter: 20,
       items: 2
     },
     900: {
