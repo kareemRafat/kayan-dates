@@ -22,16 +22,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li onclick="scrollToTargetAdjusted(event , 'contact-us')" class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">اتصل بنا </a>
           </li>
-          <li class="nav-item">
+          <li onclick="scrollToTargetAdjusted(event , 'our-products')" class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">منتجاتنا</a>
           </li>
-          <li class="nav-item">
+          <li onclick="scrollToTargetAdjusted(event , 'about-company')" class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">عن الشركة </a>
           </li>
-          <li class="nav-item">
+          <li onclick="scrollToTargetAdjusted(event , 'main')" class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
           </li>
         </ul>
@@ -39,10 +39,10 @@
     </div>
   </nav>
   <!-- header -->
-  <header class="d-flex justify-content-center align-items-center">
+  <header id="main" class="d-flex justify-content-center align-items-center">
     <div class="overlay"></div>
-    <div class="row" style="justify-content:flex-end">
-      <div class="offset-lg-1 col-lg-5 col-md-12 col-12">
+    <div class="row" style="justify-content:flex-end;--bs-gutter-x:0">
+      <div class=" col-lg-5 col-md-11 col-11">
         <div class="title">
           <h1>كيان</h1>
           <h3>للتمور</h3>

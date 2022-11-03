@@ -61,3 +61,17 @@ var slider = tns({
   },
 });
 // end carousel
+
+//  scroll to element
+function scrollToTargetAdjusted(event , elem){
+  event.preventDefault();
+  var element = document.getElementById(elem);
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.scrollY;
+  
+  window.scrollTo({
+       top: offsetPosition,
+       behavior: "smooth"
+  });
+}
+// end scroll to element
