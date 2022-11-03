@@ -4,8 +4,29 @@
   margin: 0;
 }
 
+/* library */
+/*** undeline */
+h2 {
+  margin-bottom: 15px;
+}
+h2::after {
+  content: '';
+  width: 14%;
+  height: 2px;
+  background: #e25111;
+  display: block;
+  /* background-position: center; */
+  position: absolute;
+  border: 0;
+  left: 50%;
+  transform: translate(-50%, 13px);
+
+}
+/*** end underline */
+/* end library */
+
 body {
-  height: 2000px;
+  height: 4000px;
 }
 
 .big-picture {
@@ -233,10 +254,15 @@ section#our-products .child .child-img {
   height: 60%;
   width: 100%;
   overflow: hidden;
+  padding: 15px;
+  border-radius: 10px;
+
+
 }
 
 section#our-products .child img {
-  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 section#our-products .child p {
@@ -249,14 +275,14 @@ section#our-products .child p {
 section#our-products .child span {
   position: absolute;
   right: 10px;
-  top: 52%;
+  top: 55%;
   z-index: 5;
   /* background: linear-gradient(304deg, rgba(171,62,66,1) 0%, rgba(128,40,43,1) 67%, rgba(73,18,19,1) 100%); */
   background-color: #e25111;
-  width: 127px;
-  height: 68px;
+  width: 100px;
+  height: 50px;
   border-radius: 30px 10px;
-  line-height: 68px;
+  line-height: 50px;
   text-align: center;
   border: 3px solid white;
   box-sizing: content-box;
@@ -289,3 +315,21 @@ section#our-products .child span::after {
 } */
 
 /* end  our-products */
+
+/* start contact us  */
+section#contact-us {
+  background-image: url(../images/background2.jpg);
+  font-family: 'Cairo', sans-serif;
+  padding: 80px 0; 
+  text-align: center;
+}
+
+section#contact-us form textarea {
+  height: 120px;
+}
+
+section#contact-us form button {
+  background-color: #e25111;
+  color: white;
+}
+/* end contact us  */
